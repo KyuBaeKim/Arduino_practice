@@ -1,23 +1,17 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter3/button/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter3/button/app.ino" 2
+# 1 "/Users/qbae/Workspace/Arduino/chapter3/ex02/app.ino"
+# 2 "/Users/qbae/Workspace/Arduino/chapter3/ex02/app.ino" 2
 
-const int pu_sw_pin = 2;
-Led led1(4);
-const int pd_sw_pin = 3;
-Led led2(5);
+const int in_pu_sw_pin = 2;
+Led led(8);
 
 void setup()
 {
-    pinMode(pd_sw_pin, 0x0);
-    pinMode(pu_sw_pin, 0x0);
+    pinMode(in_pu_sw_pin, 0x2); // INPUT_PULLUP INPUT 외부저항
 }
 
 void loop()
 {
-    boolean pd_sw, pu_sw;
-    pu_sw = digitalRead(pu_sw_pin);
-    led1.setValue(pu_sw);
-
-    pd_sw = digitalRead(pd_sw_pin);
-    led2.setValue(pd_sw);
+    boolean in_pu_sw;
+    in_pu_sw = !digitalRead(in_pu_sw_pin);
+    led.setValue(in_pu_sw);
 }
