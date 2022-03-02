@@ -1,17 +1,34 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter3/ex02/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter3/ex02/app.ino" 2
+# 1 "/Users/qbae/Workspace/Arduino/chapter3/ex03/app.ino"
+# 2 "/Users/qbae/Workspace/Arduino/chapter3/ex03/app.ino" 2
 
-const int in_pu_sw_pin = 2;
+
+
+
+const int sw_pin = 2;
 Led led(8);
+boolean led_st = 0;
+int count = 0;
 
 void setup()
 {
-    pinMode(in_pu_sw_pin, 0x2); // INPUT_PULLUP INPUT 외부저항
+    Serial.begin(115200);
+    pinMode(sw_pin, 0x2);
+    led.setValue(led_st);
 }
 
 void loop()
 {
-    boolean in_pu_sw;
-    in_pu_sw = !digitalRead(in_pu_sw_pin);
-    led.setValue(in_pu_sw);
+    boolean o_sw, n_sw;
+
+    o_sw = !digitalRead(sw_pin);
+    delay(1);
+    n_sw = !digitalRead(sw_pin);
+
+    if (o_sw == 0 && n_sw == 1)
+    {
+        count++; // 버튼 누른 횟수 카운트
+        Serial.println(count); // 누른 횟수 출력
+        led_st = !led_st; // Led 껏다 키기
+        led.setValue(led_st);
+    }
 }

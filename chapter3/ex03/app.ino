@@ -1,5 +1,3 @@
-#include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter3/ex03/app.ino"
 #include <Led.h>
 
 #define OFF 0
@@ -10,11 +8,6 @@ Led led(8);
 boolean led_st = OFF;
 int count = 0;
 
-#line 11 "/Users/qbae/Workspace/Arduino/chapter3/ex03/app.ino"
-void setup();
-#line 18 "/Users/qbae/Workspace/Arduino/chapter3/ex03/app.ino"
-void loop();
-#line 11 "/Users/qbae/Workspace/Arduino/chapter3/ex03/app.ino"
 void setup()
 {
     Serial.begin(115200);

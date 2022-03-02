@@ -5,7 +5,7 @@ Led led(8);
 
 void setup()
 {
-    pinMode(in_pu_sw_pin, INPUT_PULLUP); // INPUT_PULLUP INPUT 외부저항
+    pinMode(in_pu_sw_pin, INPUT_PULLUP); // INPUT_PULLUP <- 내부 저항을 쓰게 홤 
 }
 
 void loop()
