@@ -1,5 +1,3 @@
-#include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex02/app.ino"
 #include <PWMLed.h>
 
 PWMLed led(9);
