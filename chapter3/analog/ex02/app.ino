@@ -16,9 +16,9 @@ void loop()
 
     for (pwm_val = 0; pwm_val < 256; pwm_val += 5) // 서서히 밝아짐.
     {
-        led.setValue(pm_val); // PWM 신호 출력
+        led.setValue(pwm_val); // PWM 신호 출력
         delay(100);
     }
-    dled.off();
+    led.off();
     delay(2000); // 2초대기
 }

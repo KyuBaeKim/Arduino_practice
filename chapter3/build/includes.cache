@@ -1,0 +1,37 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard"
+  },
+  {
+    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter3/build/sketch/Analog.cpp.cpp",
+    "Include": "PWMLed.h",
+    "Includepath": "/Users/qbae/Documents/Arduino/libraries/PWM"
+  },
+  {
+    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter3/build/sketch/Analog.cpp.cpp",
+    "Include": "Led.h",
+    "Includepath": "/Users/qbae/Documents/Arduino/libraries/Led"
+  },
+  {
+    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter3/build/sketch/Analog.cpp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/PWM/PWMLed.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Led/Led.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

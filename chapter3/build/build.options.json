@@ -1,5 +1,5 @@
 {
-  "additionalFiles": "",
+  "additionalFiles": "..",
   "builtInLibrariesFolders": "/Applications/Arduino.app/Contents/Java/libraries",
   "builtInToolsFolders": "/Applications/Arduino.app/Contents/Java/tools-builder,/Applications/Arduino.app/Contents/Java/hardware/tools/avr",
   "compiler.optimization_flags": "",
@@ -8,5 +8,5 @@
   "hardwareFolders": "/Applications/Arduino.app/Contents/Java/hardware",
   "otherLibrariesFolders": "/Users/qbae/Documents/Arduino/libraries",
   "runtime.ide.version": "10819",
-  "sketchLocation": "/Users/qbae/Workspace/Arduino/chapter3/analog/ex02/app.ino"
+  "sketchLocation": "/Users/qbae/Workspace/Arduino/chapter3/analog/ex03/Analog.cpp"
 }
