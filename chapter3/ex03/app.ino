@@ -20,7 +20,7 @@ void loop()
     boolean o_sw, n_sw;
 
     o_sw = !digitalRead(sw_pin);
-    delay(1);
+    delay(10);
     n_sw = !digitalRead(sw_pin);
 
     if (o_sw == OFF && n_sw == ON)
