@@ -11,4 +11,5 @@
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.h
+ /Users/qbae/Documents/Arduino/libraries/Led/Led.h \
+ /Users/qbae/Documents/Arduino/libraries/MsTimer2/MsTimer2.h

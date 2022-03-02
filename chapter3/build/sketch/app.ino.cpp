@@ -1,36 +1,31 @@
 #include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter3/ex04/app.ino"
-// Switch 눌려질 때마다 4개의 LED 순차 점멸(1개 LED만 on)
+#line 1 "/Users/qbae/Workspace/Arduino/chapter3/Timer/app.ino"
 #include <Led.h>
-#define OFF 0
-#define ON 1
-const int sw_pin = 2; // 스위치 연결핀
-Led leds[4] = {
-    Led(8), Led(9), Led(10), Led(11)};
-int out_no = -1; // 출력 패턴 번호(0-3)
-#line 9 "/Users/qbae/Workspace/Arduino/chapter3/ex04/app.ino"
+#include <MsTimer2.h>
+
+boolean led_val = LOW;
+Led led(8);
+
+#line 7 "/Users/qbae/Workspace/Arduino/chapter3/Timer/app.ino"
 void setup();
-#line 14 "/Users/qbae/Workspace/Arduino/chapter3/ex04/app.ino"
+#line 14 "/Users/qbae/Workspace/Arduino/chapter3/Timer/app.ino"
 void loop();
-#line 9 "/Users/qbae/Workspace/Arduino/chapter3/ex04/app.ino"
+#line 18 "/Users/qbae/Workspace/Arduino/chapter3/Timer/app.ino"
+void flash();
+#line 7 "/Users/qbae/Workspace/Arduino/chapter3/Timer/app.ino"
 void setup()
 {
-    Serial.begin(115200);
-    pinMode(sw_pin, INPUT_PULLUP); // Switch 연결핀 입력 설정
+    // 타이머2 인터럽트 설정 및 동작 시작
+    MsTimer2::set(500, flash); // 500ms 인터럽트 주기 설정, flash() 함수 실행
+    MsTimer2::start();         // 타이머2 동작 시작
 }
+
 void loop()
 {
-    boolean o_sw, n_sw;
-    o_sw = !digitalRead(sw_pin);   // 스위치 첫 번째 상태 읽기
-    delay(10);                     // 10ms 지연
-    n_sw = !digitalRead(sw_pin);   // 스위치 두 번째 상태 읽기
-    if (o_sw == OFF && n_sw == ON) // 앞 상태 OFFand 뒤 상태 ON
-    {
-        out_no = (++out_no) % 4; // 다음 출력 패턴 번호 설정
-        Serial.println(out_no);
-        for (int n = 0; n < 4; n++)
-        {
-            leds[n].setValue(n == out_no);
-        }
-    }
+}
+
+void flash()
+{
+    led_val = !led_val;
+    led.setValue(led_val);
 }
