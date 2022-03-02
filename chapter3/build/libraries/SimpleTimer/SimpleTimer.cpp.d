@@ -1,6 +1,6 @@
-/Users/qbae/Workspace/Arduino/chapter3/build/libraries/Led/Led.cpp.o: \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.cpp \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.h \
+/Users/qbae/Workspace/Arduino/chapter3/build/libraries/SimpleTimer/SimpleTimer.cpp.o: \
+ /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.cpp \
+ /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \

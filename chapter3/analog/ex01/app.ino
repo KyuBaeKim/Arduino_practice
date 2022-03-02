@@ -1,5 +1,3 @@
-#include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex01/app.ino"
 #include <SimpleTimer.h>
 
 SimpleTimer timer;
@@ -7,13 +5,6 @@ SimpleTimer timer;
 const int var_pin = A0;
 int analog_val;
 
-#line 8 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex01/app.ino"
-void check();
-#line 24 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex01/app.ino"
-void setup();
-#line 30 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex01/app.ino"
-void loop();
-#line 8 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex01/app.ino"
 void check()
 {
     int digital_val;
@@ -41,4 +32,3 @@ void loop()
 
     timer.run();
 }
-

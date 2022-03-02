@@ -1,5 +1,5 @@
 {
-    "sketch": "Timer/app.ino",
+    "sketch": "analog/ex01/app.ino",
     "output": "build",
     "board": "arduino:avr:uno",
     "port": "/dev/tty.usbmodem11101"
