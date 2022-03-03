@@ -29,6 +29,12 @@ int colors[COLOR_NUM][3] = {
 
 int color_index = -1; // 현재 배열의 인데스
 
+int INTERVAL_NUM = 3;
+int INTERVALS[] = {500, 1000, 2000};
+int interval_index = 0;
+int timer_id = -1; //현재 가동중인 Timer의 ifdef constant-expression
+
+
 void check()
 {
     color_index = (color_index + 1) % COLOR_NUM;
@@ -40,13 +46,29 @@ void check()
     // leds.random();
 }
 
+// 버튼의 콜백 함수
+void change_interval()
+{
+    // 1. 기존 타이머 제거
+    timer.deleteTimer(timer_id);
+    // 2. interval_index 조정
+    interval_index = (interval_index + 1) % INTERVAL_NUM;
+    // 3. 타이머 재설정
+    timer_id = timer.setInterval(INTERVALS[interval_index], check);
+
+
+}
+
 void setup()
 {
     Serial.begin(115200);
-    timer.setInterval(1000, check);
+    timer_id = timer.setInterval(INTERVALS[0], check); // 첫번째 인터벌 설정
+    btn.setCallback(change_interval);
+
 }
 
 void loop()
 {
+    btn.check();
     timer.run();
 }

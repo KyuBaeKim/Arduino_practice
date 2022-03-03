@@ -11,23 +11,8 @@
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter4/build/sketch/app.ino.cpp",
-    "Include": "SimpleTimer.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/SimpleTimer"
-  },
-  {
-    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter4/build/sketch/app.ino.cpp",
-    "Include": "ColorLed.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/ColorLed"
-  },
-  {
-    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter4/build/sketch/app.ino.cpp",
-    "Include": "PWMLed.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/PWM"
-  },
-  {
-    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter4/build/sketch/app.ino.cpp",
-    "Include": "Led.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/Led"
+    "Include": "Wire.h",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src"
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter4/build/sketch/app.ino.cpp",
@@ -35,22 +20,12 @@
     "Includepath": null
   },
   {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.cpp",
+    "Sourcefile": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/ColorLed/ColorLed.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/PWM/PWMLed.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Led/Led.cpp",
+    "Sourcefile": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/utility/twi.c",
     "Include": "",
     "Includepath": null
   }

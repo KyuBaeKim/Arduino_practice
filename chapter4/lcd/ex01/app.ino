@@ -1,5 +1,4 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex01/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex01/app.ino" 2
+#include <Wire.h>
 
 void setup()
 {
@@ -32,7 +31,7 @@ void loop()
             {
                 Serial.print("0");
             }
-            Serial.print(address, 16);
+            Serial.print(address, HEX);
             Serial.println("  !");
 
             ++nDevices;
@@ -44,7 +43,7 @@ void loop()
             {
                 Serial.print("0");
             }
-            Serial.println(address, 16);
+            Serial.println(address, HEX);
         }
     }
     if (nDevices == 0)

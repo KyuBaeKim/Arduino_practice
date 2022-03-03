@@ -1,57 +1,65 @@
 #include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter4/colorled/ex02/app.ino"
-// 1초 간격으로 색상을 랜덤하게 변겨. --> 무드등!
+#line 1 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex01/app.ino"
+#include <Wire.h>
 
-// 10가지 색상을 정해서 , 1초 간격으로 순착적으로 색상 바꾸기!
-
-#include <SimpleTimer.h>
-#include <ColorLed.h>
-
-SimpleTimer timer;
-ColorLed leds(9, 10, 11);
-
-const int COLOR_NUM = 10;
-int colors[COLOR_NUM][3] = {
-    {255, 20, 147}, //단일 색상
-    {127, 255, 0},
-    {0, 255, 255},
-    {100, 149, 237},
-    {240, 255, 255},
-    {255, 240, 245},
-    {211, 211, 211},
-    {150, 150, 150},
-    {238, 130, 238},
-    {176, 196, 222},
-
-};
-
-int color_index = -1; // 현재 배열의 인데스
-
-#line 28 "/Users/qbae/Workspace/Arduino/chapter4/colorled/ex02/app.ino"
-void check();
-#line 39 "/Users/qbae/Workspace/Arduino/chapter4/colorled/ex02/app.ino"
+#line 3 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex01/app.ino"
 void setup();
-#line 45 "/Users/qbae/Workspace/Arduino/chapter4/colorled/ex02/app.ino"
+#line 13 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex01/app.ino"
 void loop();
-#line 28 "/Users/qbae/Workspace/Arduino/chapter4/colorled/ex02/app.ino"
-void check()
-{
-    color_index = (color_index + 1) % COLOR_NUM;
-    // leds.rgb(colors[color_index][0], colors[color_index][1], colors[color_index][2]);
-
-    int *pcolor = colors[color_index];
-    leds.rgb(pcolor[0], pcolor[1], pcolor[2]);
-
-    // leds.random();
-}
-
+#line 3 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex01/app.ino"
 void setup()
 {
+    Wire.begin();
+
     Serial.begin(115200);
-    timer.setInterval(1000, check);
+    while (!Serial)
+        ; // Leonardo: wait for serial monitor
+    Serial.println("\nI2C Scanner");
 }
 
 void loop()
 {
-    timer.run();
+    int nDevices = 0;
+
+    Serial.println("Scanning...");
+
+    for (byte address = 1; address < 127; ++address)
+    {
+        // The i2c_scanner uses the return value of
+        // the Write.endTransmisstion to see if
+        // a device did acknowledge to the address.
+        Wire.beginTransmission(address);
+        byte error = Wire.endTransmission();
+
+        if (error == 0)
+        {
+            Serial.print("I2C device found at address 0x");
+            if (address < 16)
+            {
+                Serial.print("0");
+            }
+            Serial.print(address, HEX);
+            Serial.println("  !");
+
+            ++nDevices;
+        }
+        else if (error == 4)
+        {
+            Serial.print("Unknown error at address 0x");
+            if (address < 16)
+            {
+                Serial.print("0");
+            }
+            Serial.println(address, HEX);
+        }
+    }
+    if (nDevices == 0)
+    {
+        Serial.println("No I2C devices found\n");
+    }
+    else
+    {
+        Serial.println("done\n");
+    }
+    delay(5000); // Wait 5 seconds for next scan
 }
