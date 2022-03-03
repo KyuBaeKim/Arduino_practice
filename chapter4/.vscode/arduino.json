@@ -1,0 +1,6 @@
+{
+    "sketch": "colorled/ex02/app.ino",
+    "output": "build",
+    "board": "arduino:avr:uno",
+    "port": "/dev/tty.usbmodem11101"
+}

@@ -1,31 +1,18 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex03/Analog.cpp"
-# 2 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex03/Analog.cpp" 2
-
-Analog::Analog(int pin, int to_min, int to_max) : pin(pin), from_min(0), from_max(0), to_min(to_min), to_max(to_max)
+# 1 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino"
+# 2 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino" 2
+# 3 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino" 2
+Led led(8);
+Button btn(2);
+boolean led_st = 0x0;
+void flash(void)
 {
+    if (!btn.debounce())
+        return;
+    led_st = !led_st; // LED 상태 반전
+    led.setValue(led_st);
 }
-void Analog::setRange(int to_min, int to_max)
-{
-    this->to_min = to_min;
-    this->to_max = to_max;
-}
-
-int Analog::read()
-{
-    int value = analogRead(pin);
-    return map(value, from_min, from_max, to_min, to_max);
-}
-# 1 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex03/app.ino"
-
-# 3 "/Users/qbae/Workspace/Arduino/chapter3/analog/ex03/app.ino" 2
-
-Analog sensor(A0, 255, 0);
-PWMLed led(9);
 void setup()
 {
+    btn.attachInterrupt(flash, 2);
 }
-void loop()
-{
-    int pwm_val = sensor.read();
-    led.setValue(pwm_val);
-}
+void loop() {}
