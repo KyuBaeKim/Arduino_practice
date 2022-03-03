@@ -1,5 +1,3 @@
-#include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
 // 1초에 10번 가변 저항을 읽어서
 // 가변 저항의 값을 lcd로 출력하시오.
 
@@ -11,13 +9,6 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 SimpleTimer timer;
 Analog sensor(A0, 1023, 0);
 
-#line 12 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
-void check();
-#line 27 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
-void setup();
-#line 37 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
-void loop();
-#line 12 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
 void check()
 { // 저항값 읽어서. lcd로 출력
     int value = sensor.read();
