@@ -1,13 +1,8 @@
 #include <Arduino.h>
 #line 1 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex02/app.ino"
-#define NOTE_C4 262 // 4옥타브 도
-#define NOTE_D4 294 // 4옥타브 레
-#define NOTE_E4 330 // 4옥타브 미
-#define NOTE_G4 392 // 4옥타브 솔
-#define NOTE_A4 440 // 4옥타브 라
-#define NOTE_C5 523 // 5옥타브 레
-#define NUM 49
+#include <pitches.h>
 
+#define NUM 49
 int melody[NUM] = { // 곰 세마리
     // 도도도도도 // 미솔솔미도
     NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4,          //도도도도도
@@ -29,11 +24,11 @@ int noteDuration[NUM] = {
     4, 8, 8, 4, 4, 4, 8, 8, 4, 4, 8, 8, 4, 8, 8, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2,
     4, 4, 4, 4, 8, 8, 8, 8, 2, 4, 4, 4, 4, 4, 4, 2};
 const int speaker_pin = 9;
-#line 30 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex02/app.ino"
+#line 25 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex02/app.ino"
 void setup();
-#line 35 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex02/app.ino"
-void loop();
 #line 30 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex02/app.ino"
+void loop();
+#line 25 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex02/app.ino"
 void setup()
 {
     pinMode(speaker_pin, OUTPUT);

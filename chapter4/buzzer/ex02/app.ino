@@ -1,11 +1,6 @@
-#define NOTE_C4 262 // 4옥타브 도
-#define NOTE_D4 294 // 4옥타브 레
-#define NOTE_E4 330 // 4옥타브 미
-#define NOTE_G4 392 // 4옥타브 솔
-#define NOTE_A4 440 // 4옥타브 라
-#define NOTE_C5 523 // 5옥타브 레
-#define NUM 49
+#include <pitches.h>
 
+#define NUM 49
 int melody[NUM] = { // 곰 세마리
     // 도도도도도 // 미솔솔미도
     NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4,          //도도도도도
