@@ -1,49 +1,24 @@
 #include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
-// 1초에 10번 가변 저항을 읽어서
-// 가변 저항의 값을 lcd로 출력하시오.
+#line 1 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex01/app.ino"
+// 부저 울리기(능동 부저)
+const int buzzer_pin = 9;
 
-#include <SimpleTimer.h>
-#include <LiquidCrystal_I2C.h>
-#include <Analog.h>
 
-LiquidCrystal_I2C lcd(0x27, 16, 2);
-SimpleTimer timer;
-Analog sensor(A0, 1023, 0);
-
-#line 12 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
-void check();
-#line 27 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
+#line 5 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex01/app.ino"
 void setup();
-#line 37 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
+#line 10 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex01/app.ino"
 void loop();
-#line 12 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex05/app.ino"
-void check()
-{ // 저항값 읽어서. lcd로 출력
-    int value = sensor.read();
-    Serial.println(value);
-    // lcd 출력
-    // lcd.clear();
-
-    lcd.setCursor(0, 1); // 두 번쨰 줄 출력
-
-    //문자열 포맷팅
-    char str[17]; // 1줄에 16글자로 가정하면, NULL문자 포함 --> 17크기
-    sprintf(str, "value: %-4d", value);
-    lcd.print(str);
-}
-
+#line 5 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/ex01/app.ino"
 void setup()
 {
-    Serial.begin(115200);
-    lcd.init();
-    lcd.backlight();
-    timer.setInterval(100, check); // 100ms 간격
-    lcd.setCursor(0, 0);
-    lcd.print("[reg. value]");
+    pinMode(buzzer_pin, OUTPUT);
 }
 
 void loop()
 {
-    timer.run();
+    digitalWrite(buzzer_pin, HIGH);
+    delay(200);
+
+    digitalWrite(buzzer_pin, LOW);
+    delay(100);
 }

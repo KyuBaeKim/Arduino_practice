@@ -10,10 +10,4 @@
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
- /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
- /Users/qbae/Documents/Arduino/libraries/LiquidCrystal_I2C/LiquidCrystal_I2C.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
- /Users/qbae/Documents/Arduino/libraries/Analog/Analog.h
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h
