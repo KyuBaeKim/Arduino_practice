@@ -1,5 +1,4 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex02/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter4/lcd/ex02/app.ino" 2
+#include <LiquidCrystal_I2C.h>
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
