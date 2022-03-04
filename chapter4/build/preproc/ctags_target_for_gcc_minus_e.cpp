@@ -1,545 +1,64 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/haul/app.ino"
-//하울의 움직이는 성 ost
+# 1 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino"
+//문제
+// 구성: 버튼 1개. 능동 부저 1개. 서브 모터 1개
 
-char piano = 8;
-
-float A[] = {27.5, 55, 110, 220, 440, 880, 1760, 3520};
-float As[] = {29.1, 58.3, 116.5, 233.1, 446.2, 932.3, 1864.7, 3729.3};
-float B[] = {30.9, 61.7, 123.5, 246.9, 493.9, 987.8, 1975.5, 3951.1};
-float C[] = {32.7, 65.4, 130.8, 261.6, 523.3, 1046.5, 2093, 4186};
-float Cs[] = {34.6, 69.3, 139.6, 277.2, 544.4, 1108.7, 2217.5};
-float D[] = {36.7, 73.4, 146.8, 293.7, 587.3, 1174.7, 2349.3};
-float Ds[] = {38.9, 77.8, 155.6, 311.1, 622.3, 1244.5, 2489};
-float E[] = {41.2, 82.4, 164.8, 329.6, 659.3, 1318.5, 2637};
-float F[] = {43.7, 87.3, 174.6, 349.2, 698.5, 1396.9, 2793.8};
-float Fs[] = {46.2, 92.5, 185, 370, 740, 1480, 2960};
-float G[] = {49, 98, 196, 392, 780, 1568, 3136};
-float Gs[] = {51.9, 103.8, 207.7, 415.3, 830, 1661.2, 3322.4};
-
-void setup() {
- pinMode(piano, 0x1);
-
- tone(piano, D[4]);
- delay(500);
- tone(piano, G[4]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, D[5]);
- delay(700);
- noTone(piano);
- delay(400);
-
- tone(piano, D[5]);
- delay(500);
- tone(piano, C[5]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, A[5]);
- delay(500);
- tone(piano, As[5]);
- delay(900);
- noTone(piano);
- delay(400);
-
- tone(piano, G[4]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, G[5]);
- delay(700);
- noTone(piano);
- delay(400);
-
- tone(piano, G[5]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, G[5]);
- delay(500);
- tone(piano, A[6]);
- delay(400);
- tone(piano, F[5]);
- delay(300);
- tone(piano, Ds[5]);
- delay(300);
- tone(piano, F[5]);
- delay(1000);
- noTone(piano);
- delay(400);
-
- tone(piano, As[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, F[5]);
- delay(500);
- tone(piano, A[6]);
- delay(1000);
- tone(piano, G[5]);
- delay(500);
- tone(piano, F[5]);
- delay(500);
- tone(piano, E[5]);
- delay(500);
- tone(piano, F[5]);
- delay(500);
- tone(piano, G[5]);
- delay(1000);
- tone(piano, F[5]);
- delay(500);
- tone(piano, E[5]);
- delay(1000);
- tone(piano, D[5]);
- delay(500);
- tone(piano, C[5]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, C[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, C[5]);
- delay(500);
- tone(piano, G[4]);
- delay(500);
- tone(piano, A[5]);
- delay(1000);
- noTone(piano);
- delay(400);
-
- tone(piano, As[5]);
- delay(1000);
- tone(piano, A[5]);
- delay(1000);
- tone(piano, C[5]);
- delay(150);
- tone(piano, As[5]);
- delay(1000);
- tone(piano, A[5]);
- delay(1000);
- noTone(piano);
- delay(400);
-
- tone(piano, A[4]);
- delay(550);
- tone(piano, D[4]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, D[4]);
- delay(500);
- noTone(piano);
- delay(10);
-
- tone(piano, A[4]);
- delay(550);
- tone(piano, D[4]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, D[4]);
- delay(500);
- noTone(piano);
- delay(10);
-
- tone(piano, A[4]);
- delay(550);
- tone(piano, D[4]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, D[4]);
- delay(500);
- noTone(piano);
- delay(10);
-
- tone(piano, D[4]);
- delay(500);
- tone(piano, G[4]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, D[5]);
- delay(700);
- noTone(piano);
- delay(400);
-
- tone(piano, D[5]);
- delay(500);
- tone(piano, C[5]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, A[5]);
- delay(500);
- tone(piano, As[5]);
- delay(900);
- noTone(piano);
- delay(400);
-
- tone(piano, G[4]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, G[5]);
- delay(700);
- noTone(piano);
- delay(400);
-
- tone(piano, G[5]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, G[5]);
- delay(500);
- tone(piano, A[6]);
- delay(400);
- tone(piano, F[5]);
- delay(300);
- tone(piano, Ds[5]);
- delay(300);
- tone(piano, F[5]);
- delay(1000);
- noTone(piano);
- delay(400);
-
- tone(piano, As[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, F[5]);
- delay(500);
- tone(piano, A[6]);
- delay(1000);
- tone(piano, G[5]);
- delay(500);
- tone(piano, F[5]);
- delay(300);
- tone(piano, E[5]);
- delay(300);
- tone(piano, D[5]);
- delay(300);
- tone(piano, E[5]);
- delay(300);
- tone(piano, G[5]);
- delay(1000);
- tone(piano, F[5]);
- delay(500);
- tone(piano, E[5]);
- delay(300);
- tone(piano, D[5]);
- delay(300);
- tone(piano, C[5]);
- delay(300);
- tone(piano, D[5]);
- delay(300);
- noTone(piano);
- delay(10);
-
- tone(piano, D[5]);
- delay(500);
- tone(piano, C[5]);
- delay(300);
- tone(piano, D[5]);
- delay(300);
- tone(piano, C[5]);
- delay(300);
- tone(piano, As[5]);
- delay(300);
- tone(piano, A[5]);
- delay(700);
- tone(piano, B[5]);
- delay(300);
- tone(piano, Cs[5]);
- delay(500);
- tone(piano, D[5]);
- delay(1000);
- noTone(piano);
- delay(10);
+// 버튼을 누르면 짧게 삐 소리 내고, 서브모터를 제어하여 문을 열어 줌
+// 3초 후에 자동으로 닫힘
+// 3초 전에 누르면 그 시점에서 3초 후에 닫힘(시간연장)
+// LCD에 현재 문의 상태(Open/Close) 출력
 
 
- tone(piano, D[5]);
- delay(500);
- tone(piano, Ds[5]);
- delay(1000);
- tone(piano, D[5]);
- delay(500);
- tone(piano, C[5]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, A[5]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, C[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
+# 11 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino" 2
+# 12 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino" 2
+# 13 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino" 2
+# 14 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino" 2
 
- tone(piano, F[4]);
- delay(1000);
- noTone(piano);
- delay(10);
- tone(piano, F[4]);
- delay(500);
- tone(piano, Ds[5]);
- delay(1000);
- tone(piano, D[5]);
- delay(500);
- tone(piano, C[5]);
- delay(1000);
- tone(piano, As[5]);
- delay(300);
- tone(piano, C[5]);
- delay(500);
- tone(piano, D[5]);
- delay(1000);
- noTone(piano);
- delay(10);
- tone(piano, D[5]);
- delay(300);
- noTone(piano);
- delay(10);
- tone(piano, D[5]);
- delay(300);
+MiniCom com;
+Servo servo;
+Button btn(2); // 사용할 서보 모터명 선언
 
- tone(piano, Cs[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, F[5]);
- delay(500);
- tone(piano, E[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, Cs[5]);
- delay(1000);
- tone(piano, E[5]);
- delay(500);
- tone(piano, A[5]);
- delay(1000);
- noTone(piano);
- delay(10);
- tone(piano, A[5]);
- delay(500);
- tone(piano, F[5]);
- delay(1000);
- noTone(piano);
- delay(10);
- tone(piano, F[5]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, F[5]);
- delay(500);
- tone(piano, E[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, E[5]);
- delay(2000);
+const int OPEN = true;
+const int CLOSE = false;
 
- tone(piano, Fs[5]);
- delay(1000);
- noTone(piano);
- delay(10);
- tone(piano, Fs[5]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, Fs[5]);
- delay(500);
- tone(piano, G[5]);
- delay(500);
- tone(piano, A[6]);
- delay(500);
- tone(piano, As[6]);
- delay(2000);
+bool door_state = CLOSE;
+int timer_id = -1;
 
- tone(piano, E[5]);
- delay(1000);
- noTone(piano);
- delay(10);
- tone(piano, E[5]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, E[5]);
- delay(500);
- tone(piano, F[5]);
- delay(500);
- tone(piano, G[5]);
- delay(500);
- tone(piano, A[6]);
- delay(2000);
-
- tone(piano, D[5]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, D[5]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, D[5]);
- delay(500);
- tone(piano, Cs[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
-
- tone(piano, Cs[5]);
- delay(1000);
- tone(piano, E[5]);
- delay(500);
- tone(piano, A[6]);
- delay(1000);
- tone(piano, G[5]);
- delay(500);
- tone(piano, Fs[5]);
- delay(2000);
-
- tone(piano, D[4]);
- delay(500);
- tone(piano, G[4]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, D[5]);
- delay(700);
- noTone(piano);
- delay(400);
-
- tone(piano, D[5]);
- delay(500);
- tone(piano, C[5]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, A[5]);
- delay(500);
- tone(piano, As[5]);
- delay(700);
- noTone(piano);
- delay(400);
-
- tone(piano, G[4]);
- delay(500);
- tone(piano, As[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, G[5]);
- delay(700);
- noTone(piano);
- delay(400);
-
- tone(piano, G[5]);
- delay(500);
- noTone(piano);
- delay(10);
- tone(piano, G[5]);
- delay(500);
- tone(piano, A[6]);
- delay(400);
- tone(piano, F[5]);
- delay(300);
- tone(piano, Ds[5]);
- delay(300);
- tone(piano, F[5]);
- delay(1000);
- noTone(piano);
- delay(400);
-
- tone(piano, As[5]);
- delay(500);
- tone(piano, D[5]);
- delay(500);
- tone(piano, F[5]);
- delay(500);
- tone(piano, A[6]);
- delay(1000);
- tone(piano, G[5]);
- delay(500);
- tone(piano, F[5]);
- delay(300);
- tone(piano, E[5]);
- delay(300);
- tone(piano, D[5]);
- delay(300);
- tone(piano, E[5]);
- delay(300);
- tone(piano, G[5]);
- delay(1000);
- tone(piano, F[5]);
- delay(500);
- tone(piano, E[5]);
- delay(300);
- tone(piano, D[5]);
- delay(300);
- tone(piano, C[5]);
- delay(300);
- tone(piano, D[5]);
- delay(300);
- noTone(piano);
- delay(10);
-
- tone(piano, D[5]);
- delay(500);
- tone(piano, C[5]);
- delay(300);
- tone(piano, D[5]);
- delay(300);
- tone(piano, C[5]);
- delay(300);
- tone(piano, As[5]);
- delay(300);
- tone(piano, A[5]);
- delay(1000);
- tone(piano, B[5]);
- delay(300);
- tone(piano, Cs[5]);
- delay(500);
- tone(piano, D[5]);
- delay(1000);
- noTone(piano);
- delay(10);
-
- tone(piano, D[4]);
- delay(300);
- noTone(piano);
- delay(10);
- tone(piano, D[4]);
- delay(500);
- tone(piano, C[4]);
- delay(300);
- tone(piano, D[4]);
- delay(300);
- tone(piano, C[4]);
- delay(300);
- tone(piano, As[4]);
- delay(300);
- tone(piano, A[4]);
- delay(1000);
- tone(piano, B[4]);
- delay(300);
- tone(piano, Cs[4]);
- delay(500);
- tone(piano, D[4]);
- delay(1500);
- noTone(piano);
- delay(10000);
-
+void close_door()
+{
+    servo.write(0);
+    door_state = CLOSE;
+    com.print(1,"CLOSE");
 }
-void loop() {
 
+void open_door()
+{
+    SimpleTimer &timer = com.getTimer();
+
+    if(door_state == OPEN)
+    {
+        timer.restartTimer(timer_id);
+    }
+    else{
+        servo.write(90);
+        timer_id = timer.setTimeout(3000, close_door);
+    }
+    door_state = OPEN;
+    com.print(1,"OPEN");
+}
+
+
+void setup()
+{
+    com.init();
+    servo.attach(5);
+    com.print(0,"[[MiniCom]]");
+    btn.setCallback(open_door);
+    close_door();
+}
+
+
+void loop()
+{
+   btn.check();
+   com.run();
 }

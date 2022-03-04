@@ -1,5 +1,3 @@
-#include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino"
 //문제
 // 구성: 버튼 1개. 능동 부저 1개. 서브 모터 1개
 
@@ -24,15 +22,6 @@ const int CLOSE = false;
 bool door_state = CLOSE;
 int timer_id = -1;
 
-#line 25 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino"
-void close_door();
-#line 32 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino"
-void open_door();
-#line 49 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino"
-void setup();
-#line 59 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino"
-void loop();
-#line 25 "/Users/qbae/Workspace/Arduino/chapter4/servo/ex02/app.ino"
 void close_door()
 {
     servo.write(0);
