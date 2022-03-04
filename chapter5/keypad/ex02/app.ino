@@ -1,5 +1,3 @@
-#include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter5/keypad/ex02/app.ino"
 // '*' 누르면 입력시작
 // 숫자 -> interrupts()
 // '#' 완료
@@ -14,22 +12,8 @@ String dumy_input = "";
 bool b_input = false;
 
 int timer_id = -1;
+const String PASSWORD = "2345";
 
-#line 16 "/Users/qbae/Workspace/Arduino/chapter5/keypad/ex02/app.ino"
-void cancel_input();
-#line 26 "/Users/qbae/Workspace/Arduino/chapter5/keypad/ex02/app.ino"
-void start_input();
-#line 36 "/Users/qbae/Workspace/Arduino/chapter5/keypad/ex02/app.ino"
-void end_input();
-#line 48 "/Users/qbae/Workspace/Arduino/chapter5/keypad/ex02/app.ino"
-void key_input(char key);
-#line 55 "/Users/qbae/Workspace/Arduino/chapter5/keypad/ex02/app.ino"
-void key_process(char key);
-#line 72 "/Users/qbae/Workspace/Arduino/chapter5/keypad/ex02/app.ino"
-void setup();
-#line 78 "/Users/qbae/Workspace/Arduino/chapter5/keypad/ex02/app.ino"
-void loop();
-#line 16 "/Users/qbae/Workspace/Arduino/chapter5/keypad/ex02/app.ino"
 void cancel_input()
 {
     b_input = false;
@@ -53,9 +37,18 @@ void start_input()
 void end_input()
 {
     //입력 완료
-    b_input = false;
+    
     Serial.print("입력완료:");
     Serial.println(input);
+    if(input == PASSWORD)
+    {
+        //문을 열어줌
+    }
+    else{
+        // 경고음
+    }
+    b_input = false;
+
     com.print(1, "");
     com.getTimer().deleteTimer(timer_id);
     timer_id = -1;
@@ -98,4 +91,3 @@ void loop()
     char key = keypad.getKey();
     key_process(key);
 }
-
