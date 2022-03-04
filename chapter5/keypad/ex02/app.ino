@@ -3,7 +3,9 @@
 // '#' 완료
 #include <MiniCom.h>
 #include <NumberPad.h>
+#include <Servo.h>
 
+Servo servo;
 MiniCom com;
 NumberPad keypad;
 
@@ -13,6 +15,22 @@ bool b_input = false;
 
 int timer_id = -1;
 const String PASSWORD = "2345";
+
+const int buzzer_pin = 9;
+
+void open_door()
+{
+    SimpleTimer &timer = com.getTimer();
+
+    servo.write(90);
+    timer.restartTimer(timer_id);
+    timer_id = timer.setTimeout(5000, close_door);
+}
+
+void close_door()
+{
+    servo.write(0);
+}
 
 void cancel_input()
 {
@@ -37,15 +55,20 @@ void start_input()
 void end_input()
 {
     //입력 완료
-    
+
     Serial.print("입력완료:");
     Serial.println(input);
-    if(input == PASSWORD)
+    if (input == PASSWORD)
     {
-        //문을 열어줌
+        open_door();
     }
-    else{
-        // 경고음
+    else
+    {
+        digitalWrite(buzzer_pin, HIGH);
+        delay(200);
+
+        digitalWrite(buzzer_pin, LOW);
+        delay(100);
     }
     b_input = false;
 
@@ -82,7 +105,11 @@ void key_process(char key)
 void setup()
 {
     com.init();
+    com.offLcd();
     com.print(0, "[[Keypad Test]]");
+    servo.attach(3);
+    servo.write(0); // close
+    pinMode(buzzer_pin, OUTPUT);
 }
 
 void loop()

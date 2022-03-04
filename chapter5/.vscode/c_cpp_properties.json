@@ -23,6 +23,7 @@
                 "/Users/qbae/Documents/Arduino/libraries/SimpleTimer",
                 "/Users/qbae/Documents/Arduino/libraries/NumberPad",
                 "/Users/qbae/Documents/Arduino/libraries/Keypad/src",
+                "/Applications/Arduino.app/Contents/Java/libraries/Servo/src",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/include"
