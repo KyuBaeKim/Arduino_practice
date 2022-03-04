@@ -1,0 +1,5 @@
+{
+    "sketch": "keypad/ex01/app.ino",
+    "output": "build",
+    "board": "arduino:avr:uno"
+}

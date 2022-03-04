@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard"
+  },
+  {
+    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
