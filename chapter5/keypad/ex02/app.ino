@@ -20,11 +20,8 @@ const int buzzer_pin = 9;
 
 void open_door()
 {
-    SimpleTimer &timer = com.getTimer();
 
     servo.write(90);
-    timer.restartTimer(timer_id);
-    timer_id = timer.setTimeout(5000, close_door);
 }
 
 void close_door()
@@ -55,12 +52,14 @@ void start_input()
 void end_input()
 {
     //입력 완료
-
+    SimpleTimer &timer = com.getTimer();
     Serial.print("입력완료:");
     Serial.println(input);
     if (input == PASSWORD)
     {
         open_door();
+        timer.restartTimer(timer_id);
+        timer_id = timer.setTimeout(5000, close_door);
     }
     else
     {

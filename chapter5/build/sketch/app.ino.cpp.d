@@ -17,8 +17,5 @@
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
  /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
- /Users/qbae/Documents/Arduino/libraries/NumberPad/NumberPad.h \
- /Users/qbae/Documents/Arduino/libraries/Keypad/src/Keypad.h \
- /Users/qbae/Documents/Arduino/libraries/Keypad/src/Key.h \
- /Applications/Arduino.app/Contents/Java/libraries/Servo/src/Servo.h \
- /Applications/Arduino.app/Contents/Java/libraries/Servo/src/avr/ServoTimers.h
+ /Users/qbae/Documents/Arduino/libraries/Analog/Analog.h \
+ /Users/qbae/Documents/Arduino/libraries/Button/Button.h

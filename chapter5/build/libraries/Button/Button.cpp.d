@@ -1,7 +1,6 @@
-/Users/qbae/Workspace/Arduino/chapter5/build/libraries/Keypad/Keypad.cpp.o: \
- /Users/qbae/Documents/Arduino/libraries/Keypad/src/Keypad.cpp \
- /Users/qbae/Documents/Arduino/libraries/Keypad/src/Keypad.h \
- /Users/qbae/Documents/Arduino/libraries/Keypad/src/Key.h \
+/Users/qbae/Workspace/Arduino/chapter5/build/libraries/Button/Button.cpp.o: \
+ /Users/qbae/Documents/Arduino/libraries/Button/Button.cpp \
+ /Users/qbae/Documents/Arduino/libraries/Button/Button.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \

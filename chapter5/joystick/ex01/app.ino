@@ -1,7 +1,6 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter5/joystick/ex01/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter5/joystick/ex01/app.ino" 2
-# 3 "/Users/qbae/Workspace/Arduino/chapter5/joystick/ex01/app.ino" 2
-# 4 "/Users/qbae/Workspace/Arduino/chapter5/joystick/ex01/app.ino" 2
+#include <MiniCom.h>
+#include <Analog.h>
+#include <Button.h>
 
 MiniCom com;
 Analog x(A0);
@@ -24,7 +23,7 @@ void setup()
 {
     com.init();
     com.setInterval(100, check); // 0.1초 간격으로
-    com.print(0, "[[Joystick");
+    com.print(0, "[[Joystick]]");
 }
 void loop()
 {

@@ -1,5 +1,6 @@
-/Users/qbae/Workspace/Arduino/chapter5/build/libraries/Servo/avr/Servo.cpp.o: \
- /Applications/Arduino.app/Contents/Java/libraries/Servo/src/avr/Servo.cpp \
+/Users/qbae/Workspace/Arduino/chapter5/build/libraries/Analog/Analog.cpp.o: \
+ /Users/qbae/Documents/Arduino/libraries/Analog/Analog.cpp \
+ /Users/qbae/Documents/Arduino/libraries/Analog/Analog.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \
@@ -10,6 +11,4 @@
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
- /Applications/Arduino.app/Contents/Java/libraries/Servo/src/Servo.h \
- /Applications/Arduino.app/Contents/Java/libraries/Servo/src/avr/ServoTimers.h
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h
