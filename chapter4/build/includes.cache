@@ -11,11 +11,6 @@
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter4/build/sketch/app.ino.cpp",
-    "Include": "pitches.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/pitches"
-  },
-  {
-    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter4/build/sketch/app.ino.cpp",
     "Include": "",
     "Includepath": null
   }

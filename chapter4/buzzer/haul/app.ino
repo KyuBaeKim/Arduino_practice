@@ -1,4 +1,3 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter4/buzzer/haul/app.ino"
 //하울의 움직이는 성 ost
 
 char piano = 8;
@@ -17,8 +16,8 @@ float G[] = {49, 98, 196, 392, 780, 1568, 3136};
 float Gs[] = {51.9, 103.8, 207.7, 415.3, 830, 1661.2, 3322.4};
 
 void setup() {
- pinMode(piano, 0x1);
-
+ pinMode(piano, OUTPUT);
+ 
  tone(piano, D[4]);
  delay(500);
  tone(piano, G[4]);
@@ -29,7 +28,7 @@ void setup() {
  delay(700);
  noTone(piano);
  delay(400);
-
+ 
  tone(piano, D[5]);
  delay(500);
  tone(piano, C[5]);
@@ -42,7 +41,7 @@ void setup() {
  delay(900);
  noTone(piano);
  delay(400);
-
+ 
  tone(piano, G[4]);
  delay(500);
  tone(piano, As[5]);
@@ -53,7 +52,7 @@ void setup() {
  delay(700);
  noTone(piano);
  delay(400);
-
+ 
  tone(piano, G[5]);
  delay(500);
  noTone(piano);
@@ -124,7 +123,7 @@ void setup() {
  delay(1000);
  noTone(piano);
  delay(400);
-
+ 
  tone(piano, A[4]);
  delay(550);
  tone(piano, D[4]);
@@ -146,7 +145,7 @@ void setup() {
  delay(500);
  noTone(piano);
  delay(10);
-
+ 
  tone(piano, A[4]);
  delay(550);
  tone(piano, D[4]);
@@ -168,7 +167,7 @@ void setup() {
  delay(700);
  noTone(piano);
  delay(400);
-
+ 
  tone(piano, D[5]);
  delay(500);
  tone(piano, C[5]);
@@ -192,7 +191,7 @@ void setup() {
  delay(700);
  noTone(piano);
  delay(400);
-
+ 
  tone(piano, G[5]);
  delay(500);
  noTone(piano);
@@ -242,7 +241,7 @@ void setup() {
  delay(300);
  noTone(piano);
  delay(10);
-
+ 
  tone(piano, D[5]);
  delay(500);
  tone(piano, C[5]);
@@ -263,8 +262,8 @@ void setup() {
  delay(1000);
  noTone(piano);
  delay(10);
-
-
+ 
+ 
  tone(piano, D[5]);
  delay(500);
  tone(piano, Ds[5]);
@@ -283,7 +282,7 @@ void setup() {
  delay(500);
  tone(piano, D[5]);
  delay(500);
-
+ 
  tone(piano, F[4]);
  delay(1000);
  noTone(piano);
@@ -310,7 +309,7 @@ void setup() {
  delay(10);
  tone(piano, D[5]);
  delay(300);
-
+ 
  tone(piano, Cs[5]);
  delay(500);
  tone(piano, D[5]);
@@ -347,7 +346,7 @@ void setup() {
  delay(500);
  tone(piano, E[5]);
  delay(2000);
-
+ 
  tone(piano, Fs[5]);
  delay(1000);
  noTone(piano);
@@ -381,7 +380,7 @@ void setup() {
  delay(500);
  tone(piano, A[6]);
  delay(2000);
-
+ 
  tone(piano, D[5]);
  delay(500);
  noTone(piano);
@@ -418,7 +417,7 @@ void setup() {
  delay(700);
  noTone(piano);
  delay(400);
-
+ 
  tone(piano, D[5]);
  delay(500);
  tone(piano, C[5]);
@@ -431,7 +430,7 @@ void setup() {
  delay(700);
  noTone(piano);
  delay(400);
-
+ 
  tone(piano, G[4]);
  delay(500);
  tone(piano, As[5]);
@@ -442,7 +441,7 @@ void setup() {
  delay(700);
  noTone(piano);
  delay(400);
-
+ 
  tone(piano, G[5]);
  delay(500);
  noTone(piano);
@@ -492,7 +491,7 @@ void setup() {
  delay(300);
  noTone(piano);
  delay(10);
-
+ 
  tone(piano, D[5]);
  delay(500);
  tone(piano, C[5]);
@@ -513,7 +512,7 @@ void setup() {
  delay(1000);
  noTone(piano);
  delay(10);
-
+ 
  tone(piano, D[4]);
  delay(300);
  noTone(piano);
@@ -538,8 +537,8 @@ void setup() {
  delay(1500);
  noTone(piano);
  delay(10000);
-
+ 
 }
 void loop() {
-
+ 
 }
