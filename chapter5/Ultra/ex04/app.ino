@@ -1,6 +1,5 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter5/Ultra/ex04/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter5/Ultra/ex04/app.ino" 2
-# 3 "/Users/qbae/Workspace/Arduino/chapter5/Ultra/ex04/app.ino" 2
+#include <MiniCom.h>
+#include <Ultra.h>
 
 MiniCom com;
 Ultra ultra(5, 6);

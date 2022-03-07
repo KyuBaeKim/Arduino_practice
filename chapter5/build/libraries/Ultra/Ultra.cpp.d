@@ -1,6 +1,6 @@
-/Users/qbae/Workspace/Arduino/chapter5/build/libraries/Led/Led.cpp.o: \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.cpp \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.h \
+/Users/qbae/Workspace/Arduino/chapter5/build/libraries/Ultra/Ultra.cpp.o: \
+ /Users/qbae/Documents/Arduino/libraries/Ultra/Ultra.cpp \
+ /Users/qbae/Documents/Arduino/libraries/Ultra/Ultra.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \

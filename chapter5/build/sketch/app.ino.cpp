@@ -1,47 +1,41 @@
 #include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino"
+#line 1 "/Users/qbae/Workspace/Arduino/chapter5/Ultra/ex04/app.ino"
 #include <MiniCom.h>
-#include <Led.h>
-#include <Pir.h>
+#include <Ultra.h>
 
-Led led(8);
 MiniCom com;
-Pir pir(7);
-
-#line 9 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino"
-void detect_on();
-#line 15 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino"
-void detect_off();
-#line 20 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino"
-void check();
-#line 24 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino"
+Ultra ultra(5, 6);
+#line 6 "/Users/qbae/Workspace/Arduino/chapter5/Ultra/ex04/app.ino"
+void notice_in();
+#line 11 "/Users/qbae/Workspace/Arduino/chapter5/Ultra/ex04/app.ino"
+void notice_out();
+#line 20 "/Users/qbae/Workspace/Arduino/chapter5/Ultra/ex04/app.ino"
 void setup();
-#line 30 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino"
+#line 26 "/Users/qbae/Workspace/Arduino/chapter5/Ultra/ex04/app.ino"
 void loop();
-#line 9 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino"
-void detect_on()
+#line 6 "/Users/qbae/Workspace/Arduino/chapter5/Ultra/ex04/app.ino"
+void notice_in()
 {
-    com.print(1, "Motion detected!");
-    led.on();
+    com.print(1, "NOTICE IN");
 }
 
-void detect_off()
+void notice_out()
 {
-    com.print(1, "Motion ended!");
-    led.off();
+    com.print(1, "NOTICE OUT");
 }
-void check()
-{
-}
+
+// void check()
+// {
+// }
 
 void setup()
 {
     com.init();
-    com.print(0, "[[Motion]]");
-    pir.setCallback(detect_on, detect_off);
+    com.print(0, "[[Distance]]");
+    ultra.setThreshold(40, notice_in, notice_out);
 }
 void loop()
 {
     com.run();
-    pir.check();
+    ultra.run();
 }

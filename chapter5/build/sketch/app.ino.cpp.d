@@ -17,5 +17,4 @@
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
  /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.h \
- /Users/qbae/Documents/Arduino/libraries/Pir/Pir.h
+ /Users/qbae/Documents/Arduino/libraries/Ultra/Ultra.h

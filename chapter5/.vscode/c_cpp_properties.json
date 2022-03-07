@@ -21,8 +21,7 @@
                 "/Users/qbae/Documents/Arduino/libraries/LiquidCrystal_I2C",
                 "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src",
                 "/Users/qbae/Documents/Arduino/libraries/SimpleTimer",
-                "/Users/qbae/Documents/Arduino/libraries/Led",
-                "/Users/qbae/Documents/Arduino/libraries/Pir",
+                "/Users/qbae/Documents/Arduino/libraries/Ultra",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/include"
