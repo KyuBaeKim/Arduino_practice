@@ -1,7 +1,6 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino" 2
-# 3 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino" 2
-# 4 "/Users/qbae/Workspace/Arduino/chapter5/PIR/ex02/app.ino" 2
+#include <MiniCom.h>
+#include <Led.h>
+#include <Pir.h>
 
 Led led(8);
 MiniCom com;

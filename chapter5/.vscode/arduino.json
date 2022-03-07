@@ -1,5 +1,5 @@
 {
-    "sketch": "LM35/ex01/app.ino",
+    "sketch": "PIR/ex02/app.ino",
     "output": "build",
     "board": "arduino:avr:uno",
     "port": "/dev/tty.usbmodem11101"
