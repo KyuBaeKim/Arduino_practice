@@ -1,32 +1,24 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter5/DHT/ex01/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter5/DHT/ex01/app.ino" 2
-# 3 "/Users/qbae/Workspace/Arduino/chapter5/DHT/ex01/app.ino" 2
+# 1 "/Users/qbae/Workspace/Arduino/chapter5/LM35/ex01/app.ino"
+# 2 "/Users/qbae/Workspace/Arduino/chapter5/LM35/ex01/app.ino" 2
 
 MiniCom com;
-DHT dht11(12, DHT11); // DHT11 객체 생성
+const int lm35_pin = A1;
+
 void check()
 {
-    float fh, fc, ff;
-
-    // DHT 온습도 센서 읽기
-    fh = dht11.readHumidity(); //습도
-    fc = dht11.readTemperature(); //섭씨 default : false
-    ff = dht11.readTemperature(true); //화씨 true
-
-    if (isnan(fh) || isnan(fc)||isnan(ff)){
-        com.print(1, "Failed!!");
-        return;
-    }
-    com.print(1, "T:", fc, " H:", fh);
+    // LM35DZ 온도센서 측정
+    int value = analogRead(lm35_pin); // 온도센서 디지털 값
+    float ftp = (float)value / 1024.0 * 5.0; // 온도센서 전압값
+    ftp = ftp * 100.0 + 0.5; // 온도값(1도/10mV)
+    com.print(1, "T: ", ftp);
 }
 
 void setup()
 {
     com.init();
     com.setInterval(2000, check); // 2초 간격으로
-    dht11.begin();
-    com.print(0, "[[DHT11]]");
-    com.print(1, "Preparing DHT11");
+    com.print(0, "[[LM35]]");
+    com.print(1, "Preparing LM35");
 }
 void loop()
 {

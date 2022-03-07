@@ -1,17 +1,9 @@
-#include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter5/LM35/ex01/app.ino"
+// lm35 온도 측정
 #include <MiniCom.h>
 
 MiniCom com;
 const int lm35_pin = A1;
 
-#line 6 "/Users/qbae/Workspace/Arduino/chapter5/LM35/ex01/app.ino"
-void check();
-#line 15 "/Users/qbae/Workspace/Arduino/chapter5/LM35/ex01/app.ino"
-void setup();
-#line 22 "/Users/qbae/Workspace/Arduino/chapter5/LM35/ex01/app.ino"
-void loop();
-#line 6 "/Users/qbae/Workspace/Arduino/chapter5/LM35/ex01/app.ino"
 void check()
 {
     // LM35DZ 온도센서 측정
