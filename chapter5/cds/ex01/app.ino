@@ -1,6 +1,6 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter5/cds/ex01/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter5/cds/ex01/app.ino" 2
-# 3 "/Users/qbae/Workspace/Arduino/chapter5/cds/ex01/app.ino" 2
+//조도센서
+include <MiniCom.h>
+#include <Analog.h>
 
 MiniCom com;
 Analog cds(A0, 0, 100);

@@ -36,11 +36,6 @@
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
-    "Include": "Button.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/Button"
-  },
-  {
-    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
     "Include": "",
     "Includepath": null
   },
@@ -71,11 +66,6 @@
   },
   {
     "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Analog/Analog.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Button/Button.cpp",
     "Include": "",
     "Includepath": null
   }

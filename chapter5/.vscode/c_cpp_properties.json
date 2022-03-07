@@ -22,7 +22,6 @@
                 "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src",
                 "/Users/qbae/Documents/Arduino/libraries/SimpleTimer",
                 "/Users/qbae/Documents/Arduino/libraries/Analog",
-                "/Users/qbae/Documents/Arduino/libraries/Button",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/include"
