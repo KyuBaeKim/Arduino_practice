@@ -1,5 +1,6 @@
-/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp.o: \
- /Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp \
+/Users/qbae/Workspace/Arduino/chapter5/build/libraries/Adafruit_Sensor-master/Adafruit_Sensor.cpp.o: \
+ /Users/qbae/Documents/Arduino/libraries/Adafruit_Sensor-master/Adafruit_Sensor.cpp \
+ /Users/qbae/Documents/Arduino/libraries/Adafruit_Sensor-master/Adafruit_Sensor.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \
@@ -11,10 +12,4 @@
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
- /Users/qbae/Documents/Arduino/libraries/MiniCom/MiniCom.h \
- /Users/qbae/Documents/Arduino/libraries/LiquidCrystal_I2C/LiquidCrystal_I2C.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
- /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
- /Users/qbae/Documents/Arduino/libraries/DHT-sensor-library-master/DHT.h
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h

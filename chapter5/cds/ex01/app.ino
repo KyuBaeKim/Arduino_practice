@@ -1,13 +1,16 @@
 //조도센서
-include <MiniCom.h>
+#include <MiniCom.h>
 #include <Analog.h>
+#include <Led.h>
 
 MiniCom com;
 Analog cds(A0, 0, 100);
+Led led(8);
 
 void check()
 {
     int value = cds.read();
+    led.setValue(value > 50);
     com.print(1, "Illu: ", value);
 }
 

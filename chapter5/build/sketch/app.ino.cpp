@@ -1,29 +1,40 @@
 #include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter5/cds/ex01/app.ino"
+#line 1 "/Users/qbae/Workspace/Arduino/chapter5/DHT/ex01/app.ino"
 #include <MiniCom.h>
-#include <Analog.h>
+#include <DHT.h>
 
 MiniCom com;
-Analog cds(A0, 0, 100);
-
-#line 7 "/Users/qbae/Workspace/Arduino/chapter5/cds/ex01/app.ino"
+DHT dht11(12, DHT11); // DHT11 객체 생성
+#line 6 "/Users/qbae/Workspace/Arduino/chapter5/DHT/ex01/app.ino"
 void check();
-#line 13 "/Users/qbae/Workspace/Arduino/chapter5/cds/ex01/app.ino"
+#line 22 "/Users/qbae/Workspace/Arduino/chapter5/DHT/ex01/app.ino"
 void setup();
-#line 19 "/Users/qbae/Workspace/Arduino/chapter5/cds/ex01/app.ino"
+#line 30 "/Users/qbae/Workspace/Arduino/chapter5/DHT/ex01/app.ino"
 void loop();
-#line 7 "/Users/qbae/Workspace/Arduino/chapter5/cds/ex01/app.ino"
+#line 6 "/Users/qbae/Workspace/Arduino/chapter5/DHT/ex01/app.ino"
 void check()
 {
-    int value = cds.read();
-    com.print(1, "Illu: ", value);
+    float fh, fc, ff;
+
+    // DHT 온습도 센서 읽기
+    fh = dht11.readHumidity();        //습도
+    fc = dht11.readTemperature();     //섭씨 default : false
+    ff = dht11.readTemperature(true); //화씨 true
+
+    if (isnan(fh) || isnan(fc)||isnan(ff)){
+        com.print(1, "Failed!!");
+        return;
+    }
+    com.print(1, "T:", fc, " H:", fh);
 }
 
 void setup()
 {
     com.init();
-    com.setInterval(100, check);
-    com.print(0, "[[CDS Test]]");
+    com.setInterval(2000, check); // 2초 간격으로
+    dht11.begin();
+    com.print(0, "[[DHT11]]");
+    com.print(1, "Preparing DHT11");
 }
 void loop()
 {

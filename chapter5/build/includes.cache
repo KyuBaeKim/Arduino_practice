@@ -31,8 +31,8 @@
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
-    "Include": "Analog.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/Analog"
+    "Include": "DHT.h",
+    "Includepath": "/Users/qbae/Documents/Arduino/libraries/DHT-sensor-library-master"
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
@@ -65,7 +65,22 @@
     "Includepath": null
   },
   {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Analog/Analog.cpp",
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/DHT-sensor-library-master/DHT.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/DHT-sensor-library-master/DHT_U.cpp",
+    "Include": "Adafruit_Sensor.h",
+    "Includepath": "/Users/qbae/Documents/Arduino/libraries/Adafruit_Sensor-master"
+  },
+  {
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/DHT-sensor-library-master/DHT_U.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Adafruit_Sensor-master/Adafruit_Sensor.cpp",
     "Include": "",
     "Includepath": null
   }

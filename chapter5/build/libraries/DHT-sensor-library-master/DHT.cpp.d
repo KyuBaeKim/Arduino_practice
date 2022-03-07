@@ -1,6 +1,6 @@
-/Users/qbae/Workspace/Arduino/chapter5/build/libraries/Analog/Analog.cpp.o: \
- /Users/qbae/Documents/Arduino/libraries/Analog/Analog.cpp \
- /Users/qbae/Documents/Arduino/libraries/Analog/Analog.h \
+/Users/qbae/Workspace/Arduino/chapter5/build/libraries/DHT-sensor-library-master/DHT.cpp.o: \
+ /Users/qbae/Documents/Arduino/libraries/DHT-sensor-library-master/DHT.cpp \
+ /Users/qbae/Documents/Arduino/libraries/DHT-sensor-library-master/DHT.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \
