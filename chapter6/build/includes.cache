@@ -1,0 +1,32 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard"
+  },
+  {
+    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter6/build/sketch/app.ino.cpp",
+    "Include": "Car.h",
+    "Includepath": "/Users/qbae/Documents/Arduino/libraries/DCMotor"
+  },
+  {
+    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter6/build/sketch/app.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/DCMotor/Car.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/DCMotor/DCMotor.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

@@ -11,28 +11,18 @@
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
-    "Include": "MiniCom.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/MiniCom"
+    "Include": "SPI.h",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/src"
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
-    "Include": "LiquidCrystal_I2C.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/LiquidCrystal_I2C"
+    "Include": "MFRC522.h",
+    "Includepath": "/Users/qbae/Documents/Arduino/libraries/MFRC522/src"
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
-    "Include": "Wire.h",
-    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src"
-  },
-  {
-    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
-    "Include": "SimpleTimer.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/SimpleTimer"
-  },
-  {
-    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
-    "Include": "Ultra.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/Ultra"
+    "Include": "Buzzer.h",
+    "Includepath": "/Users/qbae/Documents/Arduino/libraries/Buzzer.h"
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter5/build/sketch/app.ino.cpp",
@@ -40,32 +30,22 @@
     "Includepath": null
   },
   {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/MiniCom/MiniCom.cpp",
+    "Sourcefile": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/src/SPI.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/LiquidCrystal_I2C/LiquidCrystal_I2C.cpp",
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/MFRC522/src/MFRC522.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.cpp",
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/MFRC522/src/MFRC522Extended.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/utility/twi.c",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Ultra/Ultra.cpp",
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Buzzer.h/Buzzer.cpp",
     "Include": "",
     "Includepath": null
   }

@@ -11,10 +11,8 @@
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
- /Users/qbae/Documents/Arduino/libraries/MiniCom/MiniCom.h \
- /Users/qbae/Documents/Arduino/libraries/LiquidCrystal_I2C/LiquidCrystal_I2C.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
- /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
- /Users/qbae/Documents/Arduino/libraries/Ultra/Ultra.h
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/src/SPI.h \
+ /Users/qbae/Documents/Arduino/libraries/MFRC522/src/MFRC522.h \
+ /Users/qbae/Documents/Arduino/libraries/MFRC522/src/require_cpp11.h \
+ /Users/qbae/Documents/Arduino/libraries/MFRC522/src/deprecated.h \
+ /Users/qbae/Documents/Arduino/libraries/Buzzer.h/Buzzer.h
