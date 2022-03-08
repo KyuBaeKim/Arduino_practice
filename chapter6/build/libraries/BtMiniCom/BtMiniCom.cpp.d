@@ -1,5 +1,6 @@
-/Users/qbae/Workspace/Arduino/chapter6/build/sketch/app.ino.cpp.o: \
- /Users/qbae/Workspace/Arduino/chapter6/build/sketch/app.ino.cpp \
+/Users/qbae/Workspace/Arduino/chapter6/build/libraries/BtMiniCom/BtMiniCom.cpp.o: \
+ /Users/qbae/Documents/Arduino/libraries/BtMiniCom/BtMiniCom.cpp \
+ /Users/qbae/Documents/Arduino/libraries/BtMiniCom/BtMiniCom.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \
@@ -11,13 +12,10 @@
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
- /Users/qbae/Documents/Arduino/libraries/BtMiniCom/BtMiniCom.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
  /Users/qbae/Documents/Arduino/libraries/MiniCom/MiniCom.h \
  /Users/qbae/Documents/Arduino/libraries/LiquidCrystal_I2C/LiquidCrystal_I2C.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.h \
- /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
- /Users/qbae/Documents/Arduino/libraries/DCMotor/Car.h \
- /Users/qbae/Documents/Arduino/libraries/DCMotor/DCMotor.h
+ /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h

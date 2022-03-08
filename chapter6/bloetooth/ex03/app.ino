@@ -1,6 +1,5 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter6/bloetooth/ex03/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter6/bloetooth/ex03/app.ino" 2
-# 3 "/Users/qbae/Workspace/Arduino/chapter6/bloetooth/ex03/app.ino" 2
+#include <BtMiniCom.h>
+#include <Car.h>
 
 void receive_msg(String msg); // receive_msg 변수를 인식시키기 위해서 추가
                               // 함수의 순서를 정리할떄 유용핟.
