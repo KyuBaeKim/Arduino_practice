@@ -1,15 +1,8 @@
-#include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex03/app.ino"
 #include <WifiMiniCom.h>
 const char *ssid = "KT_GiGA_2G_Wave2_F1D7";
 const char *password = "2dfdhgb234";
 WifiMiniCom com;
 WiFiServer server(80); //80: Web Server 표준 포트
-#line 6 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex03/app.ino"
-void setup();
-#line 8 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex03/app.ino"
-void loop();
-#line 6 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex03/app.ino"
 void setup() { com.init(ssid, password); server.begin();
 }
 void loop()
