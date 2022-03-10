@@ -1,5 +1,3 @@
-#include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino"
 #include <MqttCom.h>
 #include <DHT.h>
 #include <Analog.h>
@@ -11,13 +9,6 @@ MqttCom com;
 DHT dht11(D6, DHT11); // DHT11 객체 생성
 Analog cds(A0, 0, 1023, 0, 100);
 
-#line 12 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino"
-void publish();
-#line 30 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino"
-void setup();
-#line 37 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino"
-void loop();
-#line 12 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino"
 void publish()
 {
     char msg[50];

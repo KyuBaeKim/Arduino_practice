@@ -130,4 +130,5 @@
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/Wire/Wire.h \
  /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
  /Users/qbae/Documents/Arduino/libraries/PubSubClient/src/PubSubClient.h \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.h
+ /Users/qbae/Documents/Arduino/libraries/DHT-sensor-library-master/DHT.h \
+ /Users/qbae/Documents/Arduino/libraries/Analog/Analog.h

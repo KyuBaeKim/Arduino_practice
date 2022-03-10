@@ -1,25 +1,49 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex05/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex05/app.ino" 2
-# 3 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex05/app.ino" 2
+# 1 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino"
+# 2 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino" 2
+# 3 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino" 2
+# 4 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino" 2
+
 const char *ssid = "KT_GiGA_2G_Wave2_F1D7";
 const char *password = "2dfdhgb234";
 const char *mqtt_server = "172.30.1.50"; // mqtt broker ip address
 MqttCom com;
-Led led(BUILTIN_LED);
-int value = 0;
-void callback(char *topic, byte *payload, unsigned int length)
+DHT dht11(D6, DHT11); // DHT11 객체 생성
+Analog cds(A0, 0, 1023, 0, 100);
+
+void publish()
 {
-    char buf[128];
-    memcpy(buf, payload, length);
-    buf[length] = '\0';
-    com.print(0, topic);
-    com.print(1, buf);
-    if (buf[0] == '1')
-    {
-        led.setValue(0x0);
+    char msg[50];
+    float fh, fc;
+    fh = dht11.readHumidity(); // 습도 측정
+    fc = dht11.readTemperature(); // 섭씨 온도 측정
+    int illu = cds.read(); // 조도 측정
+
+    if (isnan(fh) || isnan(fc))
+    { // 측정 실패시에는 출력없이 리턴
+
+        Serial.println("DHT11 read failed!!");
+        return;
     }
-    else
-    {
-        led.setValue(0x1);
-    }
+    com.publish("iot/temp", fc);
+    com.publish("iot/humi", fh);
+    com.publish("iot/illu", illu);
+}
+void setup()
+{
+    com.init(ssid, password);
+    com.setServer(mqtt_server, 
+# 33 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino" 3 4
+                              __null
+# 33 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino"
+                                  , 
+# 33 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino" 3 4
+                                    __null
+# 33 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex06/app.ino"
+                                        );
+    com.setInterval(2000, publish);
+    dht11.begin();
+}
+void loop()
+{
+    com.run();
 }

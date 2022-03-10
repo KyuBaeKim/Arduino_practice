@@ -1,6 +1,6 @@
-/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/libraries/Led/Led.cpp.o: \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.cpp \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.h \
+/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/libraries/Adafruit_Sensor-master/Adafruit_Sensor.cpp.o: \
+ /Users/qbae/Documents/Arduino/libraries/Adafruit_Sensor-master/Adafruit_Sensor.cpp \
+ /Users/qbae/Documents/Arduino/libraries/Adafruit_Sensor-master/Adafruit_Sensor.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/Arduino.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/stdlib_noniso.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/binary.h \
