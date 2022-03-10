@@ -1,0 +1,19 @@
+/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/core/aes_unwrap.cpp.o: \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/aes_unwrap.cpp \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/umm_malloc/umm_malloc.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/umm_malloc/umm_malloc_cfg.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/pgmspace.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/ets_sys.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/c_types.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/eagle_soc.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/osapi.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/user_config.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/mmu_iram.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/c_types.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/esp8266_undocumented.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/eagle_soc.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/spi_flash.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/spi_flash_geometry.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/umm_malloc/../debug.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/umm_malloc/../esp8266_undocumented.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/core_esp8266_features.h

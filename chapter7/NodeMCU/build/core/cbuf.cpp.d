@@ -1,0 +1,4 @@
+/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/core/cbuf.cpp.o: \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/cbuf.cpp \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/cbuf.h \
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/c_types.h
