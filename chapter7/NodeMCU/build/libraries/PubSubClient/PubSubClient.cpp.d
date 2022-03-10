@@ -1,5 +1,6 @@
-/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/sketch/app.ino.cpp.o: \
- /Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/sketch/app.ino.cpp \
+/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/libraries/PubSubClient/PubSubClient.cpp.o: \
+ /Users/qbae/Documents/Arduino/libraries/PubSubClient/src/PubSubClient.cpp \
+ /Users/qbae/Documents/Arduino/libraries/PubSubClient/src/PubSubClient.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/Arduino.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/stdlib_noniso.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/binary.h \
@@ -45,9 +46,6 @@
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/debug.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/variants/nodemcu/pins_arduino.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/variants/nodemcu/../generic/common.h \
- /Users/qbae/Documents/Arduino/libraries/WifiMiniCom/WifiMiniCom.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/ESP8266WiFi.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/wl_definitions.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/IPAddress.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/Printable.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/init.h \
@@ -77,56 +75,6 @@
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/arch/cc.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip-git-hash.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/debug.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/ESP8266WiFiType.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/queue.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/ESP8266WiFiSTA.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/LwipIntf.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/netif.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/err.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/pbuf.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/stats.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/mem.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/memp.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/priv/memp_std.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/priv/memp_priv.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/lwip2/include/lwip/priv/mem_priv.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/ESP8266WiFiAP.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/ESP8266WiFiScan.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/WiFiClient.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/Client.h \
  /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/Print.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/IPAddress.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/include/slist.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/WiFiServer.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/Server.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/WiFiServerSecure.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/WiFiClientSecure.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/WiFiClientSecureBearSSL.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_hash.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_hmac.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_kdf.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_rand.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_block.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_prf.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_aead.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_rsa.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_ec.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_ssl.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_x509.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/tools/sdk/include/bearssl/bearssl_pem.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/BearSSLHelpers.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/StackThunk.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/Updater.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/CertStoreBearSSL.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/BearSSLHelpers.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/FS.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/WiFiServerSecureBearSSL.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/ESP8266WiFi/src/WiFiClientSecure.h \
- /Users/qbae/Documents/Arduino/libraries/MiniCom/MiniCom.h \
- /Users/qbae/Documents/Arduino/libraries/LiquidCrystal_I2C/LiquidCrystal_I2C.h \
- /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries/Wire/Wire.h \
- /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
- /Users/qbae/Documents/Arduino/libraries/PubSubClient/src/PubSubClient.h \
- /Users/qbae/Documents/Arduino/libraries/Led/Led.h
+ /Users/qbae/Library/Arduino15/packages/esp8266/hardware/esp8266/3.0.2/cores/esp8266/IPAddress.h

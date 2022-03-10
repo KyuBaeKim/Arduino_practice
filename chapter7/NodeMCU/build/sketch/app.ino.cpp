@@ -1,44 +1,96 @@
 #include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex03/app.ino"
+#line 1 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex04/app.ino"
 #include <WifiMiniCom.h>
+#include <PubSubClient.h>
+#include <Led.h>
+
 const char *ssid = "KT_GiGA_2G_Wave2_F1D7";
 const char *password = "2dfdhgb234";
+const char *mqtt_server = "172.30.1.50"; // mqtt broker ip address
+
 WifiMiniCom com;
-WiFiServer server(80); //80: Web Server 표준 포트
-#line 6 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex03/app.ino"
+
+WiFiClient espClient;
+PubSubClient client(espClient);
+Led led(BUILTIN_LED);
+
+int value = 0;
+
+#line 17 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex04/app.ino"
+void callback(char *topic, byte *payload, unsigned int length);
+#line 38 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex04/app.ino"
+void reconnect();
+#line 58 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex04/app.ino"
+void publish();
+#line 67 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex04/app.ino"
 void setup();
-#line 8 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex03/app.ino"
+#line 74 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex04/app.ino"
 void loop();
-#line 6 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex03/app.ino"
-void setup() { com.init(ssid, password); server.begin();
+#line 17 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex04/app.ino"
+void callback(char *topic, byte *payload, unsigned int length)
+{
+    char buf[128];
+    memcpy(buf, payload, length);
+    buf[length] = '\0';
+    Serial.print("Message arrived [");
+    Serial.print(topic);
+    Serial.print("] ");
+    Serial.println(buf);
+    com.print(0, topic);
+    com.print(1, buf);
+    if (buf[0] == '1')
+    {
+        led.setValue(LOW);
+    }
+    else
+    {
+        led.setValue(HIGH);
+    }
+}
+
+void reconnect()
+{
+    while (!client.connected())
+    {
+        Serial.print("Attempting MQTT connection...");
+        if (client.connect("ESP8266Client"))
+        { // 클라이언트 ID 중복 주의
+            Serial.println("connected");
+            client.publish("outTopic", "hello world");
+            client.subscribe("inTopic"); // subscribe할 토픽 등록
+        }
+        else
+        { // 연결실패한 경우 5초 후 재시도
+            Serial.print("failed, rc=");
+            Serial.print(client.state());
+            Serial.println(" try again in 5 seconds");
+            delay(5000);
+        }
+    }
+}
+void publish()
+{
+    char msg[50];
+    ++value;
+    sprintf(msg, "hello world #%ld", value);
+    Serial.print("Publish message: ");
+    Serial.println(msg);
+    client.publish("outTopic", msg);
+}
+void setup()
+{
+    com.init(ssid, password);
+    com.setInterval(2000, publish);
+    client.setServer(mqtt_server, 1883);
+    client.setCallback(callback); // 토픽 수신 시 호출할 함수 등록
 }
 void loop()
 {
-    WiFiClient client = server.available();
-    if (!client)
+    com.run();
+    if (!client.connected())
     {
-        return;
+        reconnect();
     }
-    // Wait until the client sends some data
-    Serial.println("new client");
-    while (!client.available())
-    {
-        delay(1);
-    }
-    // Read the first line of the request
-    String request = client.readStringUntil('\r');
-    Serial.println(request);
-    client.flush();
-
-    // Return the response
-    client.println("HTTP/1.1 200 OK");
-    client.println("Content-Type: text/html");
-    client.println(""); // do not forget this one
-    client.println("<!DOCTYPE HTML>");
-    client.println("<html>");
-    client.print("HELLO WORLD!");
-    client.println("</html>");
-    delay(1);
-    Serial.println("Client disonnected");
-    Serial.println("");
+    client.loop();
 }
+
