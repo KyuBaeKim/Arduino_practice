@@ -1,6 +1,5 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex05/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex05/app.ino" 2
-# 3 "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/ex05/app.ino" 2
+#include <MqttCom.h>
+#include <Led.h>
 const char *ssid = "KT_GiGA_2G_Wave2_F1D7";
 const char *password = "2dfdhgb234";
 const char *mqtt_server = "172.30.1.50"; // mqtt broker ip address
@@ -16,10 +15,10 @@ void callback(char *topic, byte *payload, unsigned int length)
     com.print(1, buf);
     if (buf[0] == '1')
     {
-        led.setValue(0x0);
+        led.setValue(LOW);
     }
     else
     {
-        led.setValue(0x1);
+        led.setValue(HIGH);
     }
 }

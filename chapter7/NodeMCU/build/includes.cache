@@ -11,6 +11,11 @@
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/sketch/app.ino.cpp",
+    "Include": "MqttCom.h",
+    "Includepath": "/Users/qbae/Documents/Arduino/libraries/MqttCom"
+  },
+  {
+    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/sketch/app.ino.cpp",
     "Include": "WifiMiniCom.h",
     "Includepath": "/Users/qbae/Documents/Arduino/libraries/WifiMiniCom"
   },
@@ -51,6 +56,11 @@
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter7/NODEMCU/build/sketch/app.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/MqttCom/MqttCom.cpp",
     "Include": "",
     "Includepath": null
   },
