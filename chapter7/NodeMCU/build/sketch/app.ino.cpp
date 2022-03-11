@@ -32,9 +32,9 @@ void publish()
         Serial.println("DHT11 read failed!!");
         return;
     }
-    com.publish("iot/temp", fc);
-    com.publish("iot/humi", fh);
-    com.publish("iot/illu", illu);
+    com.publish("iot/qbae/livingroom/temp", fc);
+    com.publish("iot/qbae/livingroom/humi", fh);
+    com.publish("iot/qbae/livingroom/illu", illu);
 }
 void setup()
 {
