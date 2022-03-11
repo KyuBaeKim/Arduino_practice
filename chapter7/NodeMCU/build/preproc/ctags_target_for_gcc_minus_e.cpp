@@ -5,7 +5,7 @@
 
 const char *ssid = "KT_GiGA_2G_Wave2_F1D7";
 const char *password = "2dfdhgb234";
-const char *mqtt_server = "172.30.1.50"; // mqtt broker ip address
+const char *mqtt_server = "172.30.1.32"; // mqtt broker ip address
 MqttCom com;
 DHT dht11(D6, DHT11); // DHT11 객체 생성
 Analog cds(A0, 0, 1023, 0, 100);
