@@ -1,26 +1,30 @@
 #include <Arduino.h>
-#line 1 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino"
+#line 1 "/Users/qbae/Workspace/Arduino/chapter3/button/app.ino"
 #include <Led.h>
-#include <Button.h>
-Led led(8);
-Button btn(2);
-boolean led_st = LOW;
-#line 6 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino"
-void flash(void);
-#line 13 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino"
+
+const int pu_sw_pin = 2;
+Led led1(4);
+const int pd_sw_pin = 3;
+Led led2(5);
+
+#line 8 "/Users/qbae/Workspace/Arduino/chapter3/button/app.ino"
 void setup();
-#line 17 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino"
+#line 14 "/Users/qbae/Workspace/Arduino/chapter3/button/app.ino"
 void loop();
-#line 6 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino"
-void flash(void)
-{
-    if (!btn.debounce())
-        return;
-    led_st = !led_st; // LED 상태 반전
-    led.setValue(led_st);
-}
+#line 8 "/Users/qbae/Workspace/Arduino/chapter3/button/app.ino"
 void setup()
 {
-    btn.attachInterrupt(flash, FALLING);
+    pinMode(pd_sw_pin, INPUT);
+    pinMode(pu_sw_pin, INPUT);
 }
-void loop() {}
+
+void loop()
+{
+    boolean pd_sw, pu_sw;
+    pu_sw = digitalRead(pu_sw_pin);
+    led1.setValue(pu_sw);
+
+    pd_sw = digitalRead(pd_sw_pin);
+    led2.setValue(pd_sw);
+}
+

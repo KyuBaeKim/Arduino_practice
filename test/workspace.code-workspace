@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Documents/Arduino/libraries"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cstddef": "cpp",
+			"ios": "cpp",
+			"istream": "cpp"
+		}
+	}
+}

@@ -1,18 +1,23 @@
-# 1 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino"
-# 2 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino" 2
-# 3 "/Users/qbae/Workspace/Arduino/chapter3/interrupt/ex02/app.ino" 2
-Led led(8);
-Button btn(2);
-boolean led_st = 0x0;
-void flash(void)
-{
-    if (!btn.debounce())
-        return;
-    led_st = !led_st; // LED 상태 반전
-    led.setValue(led_st);
-}
+# 1 "/Users/qbae/Workspace/Arduino/chapter3/button/app.ino"
+# 2 "/Users/qbae/Workspace/Arduino/chapter3/button/app.ino" 2
+
+const int pu_sw_pin = 2;
+Led led1(4);
+const int pd_sw_pin = 3;
+Led led2(5);
+
 void setup()
 {
-    btn.attachInterrupt(flash, 2);
+    pinMode(pd_sw_pin, 0x0);
+    pinMode(pu_sw_pin, 0x0);
 }
-void loop() {}
+
+void loop()
+{
+    boolean pd_sw, pu_sw;
+    pu_sw = digitalRead(pu_sw_pin);
+    led1.setValue(pu_sw);
+
+    pd_sw = digitalRead(pd_sw_pin);
+    led2.setValue(pd_sw);
+}

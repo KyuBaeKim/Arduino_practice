@@ -1,6 +1,5 @@
-/Users/qbae/Workspace/Arduino/chapter3/build/libraries/Button/Button.cpp.o: \
- /Users/qbae/Documents/Arduino/libraries/Button/Button.cpp \
- /Users/qbae/Documents/Arduino/libraries/Button/Button.h \
+/Users/qbae/Workspace/Arduino/test/build/core/HardwareSerial3.cpp.o: \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial3.cpp \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \
@@ -10,5 +9,6 @@
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial_private.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/wiring_private.h

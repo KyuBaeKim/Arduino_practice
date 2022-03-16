@@ -16,21 +16,11 @@
   },
   {
     "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter3/build/sketch/app.ino.cpp",
-    "Include": "Button.h",
-    "Includepath": "/Users/qbae/Documents/Arduino/libraries/Button"
-  },
-  {
-    "Sourcefile": "/Users/qbae/Workspace/Arduino/chapter3/build/sketch/app.ino.cpp",
     "Include": "",
     "Includepath": null
   },
   {
     "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Led/Led.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/qbae/Documents/Arduino/libraries/Button/Button.cpp",
     "Include": "",
     "Includepath": null
   }

@@ -1,0 +1,29 @@
+/Users/qbae/Workspace/Arduino/test/build/sketch/app.ino.cpp.o: \
+ /Users/qbae/Workspace/Arduino/test/build/sketch/app.ino.cpp \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/src/SPI.h \
+ /Users/qbae/Documents/Arduino/libraries/MFRC522/src/MFRC522.h \
+ /Users/qbae/Documents/Arduino/libraries/MFRC522/src/require_cpp11.h \
+ /Users/qbae/Documents/Arduino/libraries/MFRC522/src/deprecated.h \
+ /Users/qbae/Documents/Arduino/libraries/Buzzer.h/Buzzer.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/EEPROM/src/EEPROM.h \
+ /Users/qbae/Documents/Arduino/libraries/Button/Button.h \
+ /Users/qbae/Documents/Arduino/libraries/SimpleTimer/SimpleTimer.h \
+ /Applications/Arduino.app/Contents/Java/libraries/Servo/src/Servo.h \
+ /Applications/Arduino.app/Contents/Java/libraries/Servo/src/avr/ServoTimers.h \
+ /Users/qbae/Documents/Arduino/libraries/Led/Led.h \
+ /Users/qbae/Documents/Arduino/libraries/MiniCom/MiniCom.h \
+ /Users/qbae/Documents/Arduino/libraries/LiquidCrystal_I2C/LiquidCrystal_I2C.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h
